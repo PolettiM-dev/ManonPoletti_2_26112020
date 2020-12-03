@@ -1,0 +1,35 @@
+
+/* Définition police*/
+@font-face 
+{
+    font-family:'Raleway';
+    src: url (raleway/Raleway-Regular.ttf) format (truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+/*Elements principaux de la page*/
+
+body 
+{
+    font-family: "Raleway", "Arial", "Helvetica", "sans-serif";
+   
+}
+#bloc_page
+
+{
+    width: 900px;
+    margin: auto;
+}
+
+/* Navigation*/
+nav {
+    color: #0065fc
+    
+
+ 
+}
+
+nav ul {
+    list-style-type: none;
+}
