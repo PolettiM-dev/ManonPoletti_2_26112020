@@ -19,14 +19,14 @@ body
 header 
 {
     display: flex;
-    border: 10px solid grey;
+    padding-top:10px;
    
 }
 
 
 #menu
 {
-border: 3px solid maroon;
+
 display: inline-block;
 width: 50%;
 }
@@ -34,7 +34,7 @@ width: 50%;
 /* Navigation*/
 nav  
 {
-    border: 2px solid red;
+  
     display: inline-block;
     width: 50%;
     
@@ -42,7 +42,7 @@ nav
 
 nav a 
 {
-    color: black;
+   
     text-decoration: none;     
 }
 
@@ -51,6 +51,7 @@ nav a:hover
 {
     color: #0065fc;
     border-top: solid; 
+    padding: 20px;
 }
 
 
@@ -74,34 +75,42 @@ margin: 10px;
 
 #topsection
 {
-    border: 3px solid blue;
+    
 }
 
 /*--formulaire--*/
 #formulaire
 {
-    border: solid black;
-    border-radius: 10px;
     margin-top: 2px 1px 2px 1px;
     margin-right: 450px;
 }
 .bouton
 {
-    
     border-radius: 0 10px 10px 0;
-    padding: 2px;
+    padding: 5px;
     color: white;
     background-color: #0065fc;
+    margin-right: auto;
+    height: 30px;
 }
 
 .fas.fa-map-marker-alt
 {
-    
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    
+    height: 30px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 8px;  
+  
 }
 
+input#Recherche
+{
+    height: 30px;
+    padding: 10px;
+
+}
 
 /*--filtres--*/
 #filtres
@@ -109,54 +118,75 @@ margin: 10px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-border: 3px solid red;
+
+padding-top: 10;
 }
 
-.fas.fa-money-bill-wave
+.fil
 {
-    border-radius: 50px;
+    border: solid #f2f2f2;
+    border-radius: 15px;
+   
+}
+
+.fas.fa-money-bill-wave 
+{
+    border-radius: 5px;
+    padding: 3px;
     background-color: #DEEBFF;
     color: #0065fc;
+    display: inline;
 }
 
 .fas.fa-child
 {
     border-radius: 50px;
+    padding: 3px;
     background-color: #DEEBFF;
     color: #0065fc;  
+    display: inline;
 }
 .fas.fa-heart
 {
     border-radius: 50px;
+    padding: 3px;
     background-color: #DEEBFF;
     color: #0065fc;  
+    display: inline;
 }
 .fas.fa-dog
 {
     border-radius: 50px;
+    padding: 3px;
     background-color: #DEEBFF;
     color: #0065fc;   
+    display: inline;
 }
 #filtres .economique 
 {
     font-weight: 600;
+    display: inline;
 }
 #filtres .familial
 {
     font-weight: 600;
+    display: inline;
 }
 #filtres .romantique
 {
     font-weight: 600;
+    display: inline;
 }
 #filtres .animaux
 {
     font-weight: 600;
+    display: inline;
 }
 /*---icones--*/
 .fas.fa-star /*--etoiles--*/
 {
     color: #0065fc;
+    padding-left: 10px;
 }
 
 .fas.fa-star.color-grey
@@ -166,9 +196,11 @@ border: 3px solid red;
 
 .fas.fa-info /*--info--*/
 {
+    border: solid #f2f2f2;
     border-radius: 50px;
-    background-color: #DEEBFF;
     color: #0065fc; 
+    padding-right: 5px;
+    padding-left: 5px;
 
 }
 /*--hebergements--*/
@@ -179,87 +211,96 @@ border: 3px solid red;
     justify-content: space-between;
   
 }
-.hotels
-{
-    display: flex;
-    justify-content: space-between;
-}
 
 #Hebergements
 {
     border: 3px solid pink;
+    border-radius: 10px;
     background-color: #F2F2F2;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     width: 885;
     height: 612;
+   
 }
 .hebergements
 {
     display: flex;
     justify-content: space-around;
+    
 
 }
 .hebergements .image
 {
     width: 200px;
-    height: 200px;
+    height: 100px;
+    padding-top: 5px;
 }
-
-
 
 #Hebergements .carte .image
 {
     display:block;
-    width: 100%;
 }
 #Hebergements .carte .titre
 {
     display:block;
     font-weight: 600;
+    padding-left: 10px;
 }
 #Hebergements .carte .prix
 {
     display:block;
+    padding-left: 10px;
 }
 #Hebergements .carte
 {
     display:block;
-    width: 33%;
-    border-radius: 10px white;
-    background-color: white;
+    width: 246;
+    height: 192;
+    border-radius: 10px;
+    background-color: white; 
    
 }
-
-
 
 /*--populaire--*/
 #Populaires
 {
     border: 3px solid purple;
+    border-radius: 10px;
     background-color: #F2F2F2;
+    width: 558;
+    height: 612;
+    
+    
 }
 #Populaires .lieu
 {
-    display: block;
+   
+    border-radius: 10px;
+    background-color: white;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    
+ 
 }
 #Populaires .lieu .image
 {
-    display:block;
-    width: 100%;
+    height: 120;
+    width: 120;
 }
 
 #Populaires .lieu .titre
 {
-    display: block;
     font-weight:600;
 }
-
-#Populaires .lieu .prix
+.tpf
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .afficher 
 {
@@ -268,6 +309,7 @@ border: 3px solid red;
 .fas.fa-chart-line /*--icone--*/
 { 
     color: black;
+   
 }
 
 
