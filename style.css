@@ -19,6 +19,15 @@ h1
 {
     padding-left: 30px;
 }
+@media screen and (max-width:1024px)
+{
+    body
+    
+    
+    {
+        flex-flow: row wrap;
+    }
+}
 /* header*/
 header 
 {
@@ -74,15 +83,6 @@ nav li
 margin: 10px;
 }
 
-
-
-
-
-#topsection
-{
-    
-}
-
 /*--formulaire--*/
 #formulaire
 {
@@ -122,10 +122,19 @@ input#Recherche
     padding: 10px;
     font-weight: 600;
     color: black;
-    
- 
 }
-
+@media screen and (max-width:1024px)
+{
+    #formulaire
+    {
+        display: inline;
+        
+    }
+    input#Recherche
+    {
+        width: 150px;
+    }
+}
 /*--filtres--*/
 #filtres
 {
@@ -217,6 +226,19 @@ padding-top: 10;
     font-weight: 600;
     display: inline;
 }
+@media screen and (max-width:1024px)
+{
+    #filtres
+    {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .fil
+    {
+        width: 200px;
+        
+    }
+}
 /*---icones--*/
 .fas.fa-star /*--etoiles--*/
 {
@@ -282,7 +304,6 @@ padding-top: 10;
     padding-left: 5px;
 }
 
-
 #Hebergements .carte .titre
 {
     display:block;
@@ -311,7 +332,42 @@ padding-top: 10;
 {
     margin-left: 30px;
 }
-/*--populaire--*/
+@media screen and (max-width:1024px)
+{
+    #hotels
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #Hebergements
+    {
+        height: 1500px;
+        width: 370px;
+        padding-right: 50px;
+        
+    }
+    .hebergements
+    {   display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        
+    }
+   #Hebergements .carte
+   {
+       height: 150px;
+       width: 330px;
+       margin-bottom: 5px;
+       
+   }
+   .hebergements .carte .image 
+   {
+        height: 115px;
+        width: 320px;
+   }
+   
+    
+}
+/*--POPULAIRE--*/
 #Populaires
 {
     border-radius: 10px;
@@ -384,9 +440,21 @@ padding-top: 10;
     padding-left: 70px;
     
 }
-
-
-
+@media screen and (max-width:1024px)
+   {
+       #Populaires
+       {
+      
+        flex-wrap: wrap-reverse;
+        height: 600px;
+        width: 370px;
+       }
+       .tpf
+       {
+        height: 190px;
+        width: 320px;
+       }
+   }
 /*--ACTIVITES--*/
 #activites
 {
@@ -487,7 +555,70 @@ padding-top: 10;
     width: 300px;
 
 }
-/*--Footer--*/
+@media screen and (max-width:1024px)
+{
+    #activites
+    {
+        height: 1300px;
+    }
+    .visite
+    {
+       flex-direction: column;
+
+    }
+   .mer
+   {
+    height: 190px;
+    width: 330px;
+   }
+   .fort
+   {
+    height: 190px;
+    width: 330px;
+   }
+   .frioul
+   {
+    height: 190px;
+    width: 330px; 
+   }
+   .ndlg
+   {
+    height: 190px;
+    width: 330px;
+   }
+   .parc
+   {
+    height: 190px;
+    width: 330px;
+   }
+   .picturebig
+   {
+    height: 130px;
+    width: 330px;
+   }
+   .picture
+   {
+    height: 130px;
+    width: 330px;
+   }
+   .picturesmall
+   {
+    height: 130px;
+    width: 330px;
+   }
+   .ciel
+   {
+    height: 130px;
+    width: 330px;
+   }
+   .vue
+   {
+    height: 130px;
+    width: 330px;
+   }
+   
+}
+/*--FOOTER--*/
 footer 
 {
     display: flex;
@@ -495,4 +626,14 @@ footer
     background-color: #F2F2F2;
     
    
+}
+@media screen and (max-width:1024px)
+{
+    /*--FOOTER--*/
+    footer
+    {
+        flex-direction: column;
+        padding-left:20px;
+        width: 370px;
+    }
 }
