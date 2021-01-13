@@ -58,14 +58,17 @@ nav a
    
     text-decoration: none;     
     color: black;
+    border-top: solid;
+    padding: 20px;
+    border-color: transparent;
 }
 
 
 nav a:hover 
 {
     color: #0065fc;
-    border-top: solid; 
-    padding: 20px;
+    border-color: #0065fc;
+   
 }
 
 
@@ -82,7 +85,23 @@ nav li
 {
 margin: 10px;
 }
-
+.selection
+{
+    display:flex;
+    flex-direction: row;
+}
+@media screen and (max-width:1024px)
+{
+    nav
+    {
+        display: inline;
+    }
+    .selection
+{
+    display:flex;
+    flex-direction: row;
+}
+}
 /*--formulaire--*/
 #formulaire
 {
@@ -151,10 +170,12 @@ padding-top: 10;
     border-radius: 20px;
     padding-top: 6;
     padding-bottom: 6;
-   
     padding-right: 10;
+    justify-content: flex-start;
    
 }
+
+
 
 .fas.fa-money-bill-wave 
 {
@@ -206,29 +227,59 @@ padding-top: 10;
     padding-left: 12;
     padding-right: 12;
 }
+#filtres .filtre
+{
+    margin-right: auto;
+}
+#filtres .lesfiltres
+{
+    margin-right: 20px;
+}
 #filtres .economique 
 {
     font-weight: 600;
     display: inline;
+}
+#filtres .economique:hover
+{
+    color:#0065fc;
+    
 }
 #filtres .familial
 {
     font-weight: 600;
     display: inline;
 }
+#filtres .familial:hover
+{
+    color: #0065fc;
+}
 #filtres .romantique
 {
     font-weight: 600;
     display: inline;
+}
+#filtres .romantique:hover
+{
+    color: #0065fc;
 }
 #filtres .animaux
 {
     font-weight: 600;
     display: inline;
 }
-@media screen and (max-width:1024px)
+#filtres .animaux:hover
 {
+    color: #0065fc;
+}
+@media screen and (max-width:1024px)
+{   
     #filtres
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .lesfiltres
     {
         display:flex;
         flex-wrap: wrap;
@@ -391,9 +442,6 @@ padding-top: 10;
     margin-left: 30px;
     height: 145;
     width: 345;
-    
-    
- 
 }
 #Populaires .lieu .image
 {
@@ -444,7 +492,6 @@ padding-top: 10;
    {
        #Populaires
        {
-      
         flex-wrap: wrap-reverse;
         height: 600px;
         width: 370px;
@@ -453,6 +500,13 @@ padding-top: 10;
        {
         height: 190px;
         width: 320px;
+       }
+       #Populaires .lieu
+       {
+           padding-left:2px;
+           margin-right: 80px;
+           height: 145px;
+           width: 330px;
        }
    }
 /*--ACTIVITES--*/

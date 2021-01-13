@@ -19,9 +19,13 @@
             <nav>
                 <p>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <span class="selection">
+                        <li><a href="#Hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                    </span>
+                    <span class="inscription">
+                        <li><a href="#">S'inscrire</a></li>
+                    </span>
                 </ul>
                 </p>
              </nav>
@@ -51,28 +55,30 @@
 
             <!--filtres L1437px H-->
             <div id="filtres">
-                <strong> Filtres</strong>
+                <div class="filtre"><strong> Filtres</strong>
+                </div>
+                
+                <div class="lesfiltres">
+                    <span class="fil">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div class="economique">Economique</div>
+                    </span> 
 
-                <span class="fil">
-                <i class="fas fa-money-bill-wave"></i>
-                <div class="economique">Economique</div>
-                </span> 
+                    <span class="fil">
+                    <i class="fas fa-child"></i>
+                    <div class="familial">Familial</div>
+                    </span>
 
-                <span class="fil">
-                <i class="fas fa-child"></i>
-                <div class="familial">Familial</div>
-                </span>
+                    <span class="fil">
+                    <i class="fas fa-heart"></i>
+                    <div class="romantique">Romantique</div>
+                    </span>
 
-                <span class="fil">
-                <i class="fas fa-heart"></i>
-                <div class="romantique">Romantique</div>
-                </span>
-
-                <span class="fil">
-                <i class="fas fa-dog"></i>
-                <div class="animaux">Animaux autorisés</div>
-                </span>
-
+                    <span class="fil">
+                    <i class="fas fa-dog"></i>
+                    <div class="animaux">Animaux autorisés</div>
+                    </span>
+                </div>
             </div>
 
             <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
@@ -88,10 +94,10 @@
 
         <section id="Hebergements">
             <h1>Hébergements à Marseille</h1>
-            <a href=""></a>
-
-            <section class="hebergements">
-            <div class="carte">
+            
+           
+            <section class="hebergements"> 
+            <div class="carte"> 
                 <img class="image" src="images/hebergements/4_small/auberge canebiere.jpg" alt="Auberge la Cannebière">
                 <span class="titre">Auberge la Cannebière</span>
                 <span class="prix">Nuit à partir de 25€</span>
@@ -166,7 +172,7 @@
         <!--Section les plus populaires-->
         <section id="Populaires">
             <div class="pop"><h1> Les plus populaires <i class="fas fa-chart-line"></i></h1>
-            <a href=""></a>
+           
             </div>
             <div class="lieu">
                 <img class="image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
@@ -225,40 +231,40 @@
         <!--Section activités à Marseille-->
         <section id="activites">
             <h1>Activités à Marseille</h1>
-
-        <div class="visite">
+            
+                <div class="visite">
                 <div class="mer">
-                <img class="picturebig" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                <span class="description">Vieux Port</span>
+                    <img class="picturebig" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                    <span class="description">Vieux Port</span>
                  </div>
 
-            <div class="premierbloc">
+                 <div class="premierbloc">
                 <div class="fort">
-                <img class="picture" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                <span class="description">Fort de Pomègues</span>
+                    <img class="picture" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <span class="description">Fort de Pomègues</span>
                 </div>
             
 
                 <div class="frioul">
-                <img class="picturesmall" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                <span class="description">Îles du Frioul</span>
+                    <img class="picturesmall" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                    <span class="description">Îles du Frioul</span>
                 </div>
-            </div>
+                </div>
         
                 <div class="mer">
-                <img class="picturebig" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                <span class="description">National des Calanques</span>
+                    <img class="picturebig" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                    <span class="description">National des Calanques</span>
                 </div>
             
-            <div class="deuxiemebloc">  
+                <div class="deuxiemebloc">  
                 <div class="ndlg">
-                <img class="ciel" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                <span class="description">Notre-Dame-de-la-Garde</span>
+                    <img class="ciel" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <span class="description">Notre-Dame-de-la-Garde</span>
                 </div>  
             
                 <div class="parc">
-                <img class="vue" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                <span class="description">Parc Longchamp</span>
+                    <img class="vue" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <span class="description">Parc Longchamp</span>
                 </div>     
             </div>    
                 
