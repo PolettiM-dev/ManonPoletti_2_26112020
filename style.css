@@ -15,19 +15,34 @@ body
     margin-right: 200px;
     margin-left: 200px;
 }
+}
 h1
 {
     padding-left: 30px;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     body
-    
-    
     {
-        flex-flow: row wrap;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
+#blocpage
+{
+    width: auto;
+    margin: auto;
+}
+@media screen and (max-width:375px)
+{
+    #blocpage
+    {
+       
+        margin:auto;
+    }
+
+}
+
 /* header*/
 header 
 {
@@ -35,7 +50,13 @@ header
     padding-top:10px;
    
 }
-
+@media screen and (max-width:375px)
+{
+    header
+    {
+        
+    }
+}
 
 #menu
 {
@@ -90,17 +111,46 @@ margin: 10px;
     display:flex;
     flex-direction: row;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     nav
     {
-        display: inline;
+        width: auto;
+        display: flex;
+    }
+    nav ul
+    {
+       
+       flex-direction: column;
     }
     .selection
-{
-    display:flex;
-    flex-direction: row;
-}
+    {
+   
+    order:2;
+   
+    }
+    .inscription 
+    {
+        justify-content: flex-end;
+        border-bottom: transparent;
+    }
+    nav li
+    {
+        
+    }
+    nav a 
+    {
+   
+    border-color: transparent;
+    }
+    nav a:hover 
+    {
+    color: #0065fc;
+    border-color: #0065fc;
+    border-bottom: solid;
+    border-top: transparent;
+   
+    }
 }
 /*--formulaire--*/
 #formulaire
@@ -142,7 +192,7 @@ input#Recherche
     font-weight: 600;
     color: black;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     #formulaire
     {
@@ -172,6 +222,7 @@ padding-top: 10;
     padding-bottom: 6;
     padding-right: 10;
     justify-content: flex-start;
+    margin-right: 30px;
    
 }
 
@@ -233,7 +284,7 @@ padding-top: 10;
 }
 #filtres .lesfiltres
 {
-    margin-right: 20px;
+    margin-right: 600px;
 }
 #filtres .economique 
 {
@@ -272,12 +323,13 @@ padding-top: 10;
 {
     color: #0065fc;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {   
     #filtres
     {
         display: flex;
         flex-direction: column;
+        place-items: flex-start;
     }
     .lesfiltres
     {
@@ -333,7 +385,7 @@ padding-top: 10;
     height: 620;
     width: 880;
     margin-top:30px;
-    margin-left:30px;
+    
     
     
    
@@ -383,30 +435,36 @@ padding-top: 10;
 {
     margin-left: 30px;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     #hotels
     {
         display: flex;
-        flex-wrap: wrap-reverse;
+        margin: auto;
+        flex-direction: column-reverse;
+    
     }
+    
     #Hebergements
     {
         height: 1500px;
-        width: 370px;
-        padding-right: 50px;
-        
+        width: 360px;
+        padding-right: 10;
+       
+    
     }
     .hebergements
     {   display: flex;
         flex-wrap: wrap;
         margin-bottom: 50px;
+        margin-left: 30;
+        justify-content: space-around;
         
     }
    #Hebergements .carte
    {
-       height: 150px;
-       width: 330px;
+       height: 200px;
+       width: 400px;
        margin-bottom: 5px;
        
    }
@@ -488,7 +546,7 @@ padding-top: 10;
     padding-left: 70px;
     
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
    {
        #Populaires
        {
@@ -609,7 +667,7 @@ padding-top: 10;
     width: 300px;
 
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     #activites
     {
@@ -681,7 +739,7 @@ footer
     
    
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:375px)
 {
     /*--FOOTER--*/
     footer
