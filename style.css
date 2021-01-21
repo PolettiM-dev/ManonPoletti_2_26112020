@@ -82,6 +82,7 @@ nav a:hover
 {
     color: #0065fc;
     border-color: #0065fc;
+    border-top: solid 4px;
 }
 
 nav ul
@@ -152,7 +153,7 @@ margin: 10px;
 #formulaire
 {
     margin-top: 2px 1px 2px 1px;
-    margin-right: 450px;
+    
 }
 .bouton
 {
@@ -202,8 +203,7 @@ input#Recherche
 #filtres
 {
 display: flex;
-flex-direction: row;
-justify-content: space-around;
+justify-content: flex-start;
 padding-top: 10;
 margin-bottom: 30;
 margin-top: 30;
@@ -274,11 +274,13 @@ margin-top: 30;
 }
 #filtres .filtre
 {
-    margin-right: auto;
+    margin-right: 20;
+    margin-top: 8px;
+    font-weight: 600;
 }
 #filtres .lesfiltres
 {
-    margin-right: 600px;
+    display: flex;
 }
 #filtres .economique 
 {
@@ -574,7 +576,10 @@ margin-top: 30;
        {
         flex-wrap: wrap-reverse;
         height: 600px;
-        width: 380;
+        width: 100%;
+        padding-right: 10px;
+        margin-top: 0;
+        margin-right: 0;
        }
 
        .tpf
@@ -586,9 +591,10 @@ margin-top: 30;
        #Populaires .lieu
        {   
         height: 145px;
-        width: 330px;
-        margin-right: 5;
-        margin-left: 20;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 30;
        }
        
    }
@@ -598,8 +604,17 @@ margin-top: 30;
     {
      flex-wrap: wrap-reverse;
      height: 600px;
-     width: auto; 
+     width: 50%; 
      }
+
+     #Populaires .lieu
+       {   
+        height: 145px;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 30;
+       }
 }
 
 /*--ACTIVITES--*/
