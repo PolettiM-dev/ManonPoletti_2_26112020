@@ -37,8 +37,8 @@ h1
 {
     #blocpage
     {
-        margin-right: 10;
-        margin-left: 0;
+        margin-right: 10px;
+        margin-left: 0px;
     }
 }
 
@@ -120,7 +120,7 @@ margin: 10px;
     {
    
     order:2;
-    margin-left: -100;
+    margin-left: -100px;
     justify-content: space-around;
    
     }
@@ -165,11 +165,8 @@ margin: 10px;
 }
 .bouton
 {
-    border-radius: 0 10px 10px 0;
-    padding-bottom: 9;
-    padding-left: 10;
-    padding-top: 7;
-    padding-right: 10;
+    border-radius: 0px 10px 10px 0px;
+    padding:10px;
     color: white;
     background-color: #0065fc;
     margin-left: -6px;
@@ -181,10 +178,7 @@ margin: 10px;
 {
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    padding-bottom: 11;
-    padding-left: 10;
-    padding-top: 7;
-    padding-right: 10;
+    padding: 12px 10px 12px 10px;
     margin-right: -6px; 
     text-align: center;
 }
@@ -192,7 +186,7 @@ margin: 10px;
 input#Recherche
 {
     height: 34px;
-    padding: 10px;
+    padding: 0px;
     font-weight: 600;
     color: black;
 }
@@ -216,9 +210,9 @@ input#Recherche
 {
 display: flex;
 justify-content: flex-start;
-padding-top: 10;
-margin-bottom: 30;
-margin-top: 30;
+padding-top: 10px;
+margin-bottom: 30px;
+margin-top: 30px;
 }
 
 .fil
@@ -226,9 +220,9 @@ margin-top: 30;
     border: solid #f2f2f2;
     border-radius: 20px;
     border-left: transparent;
-    padding-top: 6;
-    padding-bottom: 6;
-    padding-right: 10;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
     justify-content: flex-start;
     margin-right: 30px;
 }
@@ -242,10 +236,10 @@ margin-top: 30;
     background-color: #DEEBFF;
     color: #0065fc;
     display: inline;
-    padding-top: 8;
-    padding-bottom: 8;
-    padding-left: 8;
-    padding-right: 8;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .fas.fa-child
@@ -255,10 +249,10 @@ margin-top: 30;
     background-color: #DEEBFF;
     color: #0065fc;  
     display: inline;
-    padding-top: 10;
-    padding-bottom: 10;
-    padding-left: 12;
-    padding-right: 12;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .fas.fa-heart
 {
@@ -267,10 +261,10 @@ margin-top: 30;
     background-color: #DEEBFF;
     color: #0065fc;  
     display: inline;
-    padding-top: 10;
-    padding-bottom: 10;
-    padding-left: 12;
-    padding-right: 12;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .fas.fa-dog
 {
@@ -279,14 +273,14 @@ margin-top: 30;
     background-color: #DEEBFF;
     color: #0065fc;   
     display: inline;
-    padding-top: 10;
-    padding-bottom: 10;
-    padding-left: 12;
-    padding-right: 12;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 #filtres .filtre
 {
-    margin-right: 20;
+    margin-right: 20px;
     margin-top: 8px;
     font-weight: 600;
 }
@@ -414,8 +408,8 @@ margin-top: 30;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 620;
-    width: 880;
+    height: 620px;
+    width: 880px;
     margin-top:30px;
 }
 
@@ -433,6 +427,7 @@ margin-top: 30;
     width: 230px;
     padding-top: 5px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 #Hebergements .carte .titre
@@ -486,7 +481,7 @@ margin-top: 30;
     {   display: flex;
         flex-wrap: wrap;
         margin-bottom: 50px;
-        margin-left: 30;
+        margin-left: 30px;
         justify-content: space-around; 
     }
 
@@ -494,15 +489,15 @@ margin-top: 30;
    {
         height: 200px;
         width: 400px;
-        margin-bottom: 20;
-        margin-right: 20;
+        margin-bottom: 20px;
+        margin-right: 20px;
    }
 
    .hebergements .carte .image 
    {
         height: 115px;
         width: 320px;
-        padding-right: 5;
+        padding-right: 5px;
    }
 
    .afficher
@@ -521,8 +516,8 @@ margin-top: 30;
 {
     border-radius: 10px;
     background-color: #F2F2F2;
-    height: 620;
-    width: 420;
+    height: 620px;
+    width: 420px;
     margin-top:30px;
     margin-right:30px;   
 }
@@ -533,8 +528,8 @@ margin-top: 30;
     display: flex;
     margin-bottom: 30px;
     margin-left: 30px;
-    height: 145;
-    width: 345;
+    height: 145px;
+    width: 345px;
 }
 
 #Populaires .lieu .image
@@ -542,8 +537,8 @@ margin-top: 30;
     border-radius: 20px 0px 0px 20px;
     padding-top: 5px;
     padding-left: 5px;
-    height: 135;
-    width: 125;
+    height: 135px;
+    width: 125px;
 }
 
 #Populaires .lieu .titre
@@ -606,8 +601,8 @@ margin-top: 30;
         height: 145px;
         width: auto;
         margin-right: 0;
-        margin-left: 10;
-        margin-bottom: 30;
+        margin-left: 10px;
+        margin-bottom: 30px;
        }
        
    }
@@ -626,7 +621,7 @@ margin-top: 30;
         width: 50%;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 30;
+        margin-bottom: 30px;
        }
 }
 
@@ -734,7 +729,7 @@ margin-top: 30;
     #activites
     {
         height: 1300px;
-        padding-top: 5;
+        padding-top: 5px;
     }
     .visite
     {
