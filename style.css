@@ -38,7 +38,7 @@ h1
     #blocpage
     {
         margin-right: 10;
-        margin-left: 2;
+        margin-left: 0;
     }
 }
 
@@ -149,6 +149,14 @@ margin: 10px;
     width: 30;
     }
 }
+/*---TOPSECTION---*/
+@media screen and (max-width:768px)
+{
+    #topsection
+    {
+        margin-left:10px;
+    }
+}
 /*--formulaire--*/
 #formulaire
 {
@@ -197,6 +205,10 @@ input#Recherche
     input#Recherche
     {
         width: 150px;
+    }
+    .fas.fa-map-marker-alt
+    {
+        margin-left: 10px;
     }
 }
 /*--filtres--*/
@@ -325,6 +337,7 @@ margin-top: 30;
         display: flex;
         flex-direction: column;
         place-items: flex-start;
+        margin-left: 10px;
     }
     .lesfiltres
     {
@@ -593,7 +606,7 @@ margin-top: 30;
         height: 145px;
         width: auto;
         margin-right: 0;
-        margin-left: 0;
+        margin-left: 10;
         margin-bottom: 30;
        }
        
@@ -610,7 +623,7 @@ margin-top: 30;
      #Populaires .lieu
        {   
         height: 145px;
-        width: auto;
+        width: 50%;
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 30;
