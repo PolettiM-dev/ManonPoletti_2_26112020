@@ -625,7 +625,7 @@ margin-top: 30px;
     padding-left: 70px; 
 }
 
-@media all and (max-width:768px)
+@media all and (max-width:667px)
    {
        #Populaires
        {
@@ -653,19 +653,19 @@ margin-top: 30px;
        }
        
    }
-   @media all and (min-width:768px and max-width:1024px)
+   @media all and (min-width:667px and max-width:1024px)
 {
     #Populaires
     {
      flex-wrap: wrap-reverse;
      height: 600px;
-     width: 50%; 
+     width: auto; 
      }
 
      #Populaires .lieu
        {   
         height: 145px;
-        width: 50%;
+        width: auto;
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 30px;
