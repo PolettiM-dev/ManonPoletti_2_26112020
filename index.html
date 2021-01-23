@@ -13,22 +13,25 @@
         <div id="blocpage">
         <header>
 
-            <div id="menu">
+            <div class="menu">
 
-                <div class="logo"><img src="images/logo/Reservia.svg" alt="logo de Reservia" id="logo" /></div>
+                <div class="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo de Reservia" id="logo" />
+                </div>
+   
+                <div class="nav">
+                    <a href="#Hebergements">Hébergements</a>
+                </div>
+                        
+                <div class="nav">
+                    <a href="#activites">Activités</a>
+                </div>
+                
+                <div class="nav">
+                    <a href="#inscription" id="font-inscription">S'inscrire</a> 
+                </div>
 
             </div>
-            <nav>
-                
-                <ul>
-                    
-                        <li id="selection"><a href="#Hebergements">Hébergements</a></li>
-                        <li id="selection"><a href="#activites">Activités</a></li>
-                        <li id="inscripstion"><a href="#">S'inscrire</a></li>
-                    
-                </ul>
-                
-             </nav>
         </header>
             
             <div id="topsection">
@@ -42,14 +45,15 @@
             <div id="formulaire">
 
                 <form method="post" action="traitement.php">
-                    <p>
+                    
                         <i class="fas fa-map-marker-alt"></i>
                         <!--icône lieu-->
 
                         <input type="text" name="Recherche" id="Recherche" placeholder="Marseille, France" size='30'
                             maxlength='10' />
                         <label for="Recherche" class="bouton">Rechercher</label>
-                    </p>
+                        <label for="Recherche" class="loupe"><i class="fas fa-search"></i></label>
+                    
                 </form>
             </div>
 

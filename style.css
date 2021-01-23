@@ -20,7 +20,7 @@ h1
 {
     padding-left: 30px;
 }
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     body
     {
@@ -33,7 +33,7 @@ h1
     width: auto;
     margin: auto;
 }
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     #blocpage
     {
@@ -43,119 +43,146 @@ h1
 }
 
 /* header*/
-header 
+
+.menu  
 {
     display: flex;
-    padding-top:10px;
+    flex-flow: row nowrap;
+    justify-content: flex-start; 
+    height: 80px;
 }
-@media screen and (max-width:768px)
+.logo
 {
-    header
-    {
-        
-    }
+    flex-basis: 70%;
+    width: 100px;
+    margin-top: 20px;
 }
-
-#menu
+.logo img
 {
-display: inline-block;
-width: 50%;
+    width: 100px;
+    height: 40px;
 }
-
-/* Navigation*/
-nav  
+.nav 
 {
-    display: inline-block;
-    width: 50%; 
+         
+    padding: 0px 20px 20px 20px;
+    margin-left: 10px;
+    margin-top: 0px;
+    line-height: 60px;
+    border-top: 2px solid white;
+    
 }
-
-nav a 
+.nav a
 {
-    text-decoration: none;     
+    text-decoration: none;
     color: black;
-    border-top: solid;
-    padding: 20px;
-    border-color: transparent;
+   
 }
 
-nav a:hover 
+
+.menu a:hover
 {
+    font-weight: bold;
     color: #0065fc;
-    border-color: #0065fc;
-    border-top: solid 4px;
+    border-top: solid 4px #0065fc; 
+    padding-top:20px;
+} 
+
+#font-inscription
+{
+    font-weight: bold;
+    color: #0065fc;
 }
 
-nav ul
+@media all and (max-width:667px)
 {
-    list-style-type: none;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-nav li
-{
-margin: 10px;
-}
-
-.selection
-{
-    display:flex;
-    flex-direction: row;
-}
-@media screen and (max-width:768px)
-{
-    nav
+    .menu
     {
-        width: auto;
-        display: flex;
+        flex-wrap:wrap;
+        justify-content: flex-end;
+        align-items: center;
+        height: 130px;
+        width: 375px;
+        margin: 0px;
+    }  
+    .menu div
+    {
+        margin-bottom: 10px;
     }
-    nav ul
+    .menu a:hover
+    {
+        border-top: transparent;
+    }
+    
+
+    .nav
+    {
+        border-top: transparent;
+        line-height: 40px;
+        margin: 0px;
+        padding:0px;
+    }
+
+    .logo
     {
        
-       flex-direction: column;
-    }
-    .selection
-    {
-   
-    order:2;
-    margin-left: -100px;
-    justify-content: space-around;
-   
-    }
-    .inscription 
-    {
-        justify-content: flex-end;
-        border-bottom: transparent;
-        margin-left: 120px;
-        margin-bottom: 20px;
-    }
-    nav li
-    {
+        margin: 0px;
         
     }
-    nav a 
-    {   
-        border-color: transparent;
-        color: black;
-    }
-    nav a:hover 
+
+    .menu div:nth-child(1)
     {
-    color: #0065fc;
-    border-color: #0065fc;
-    border-top: transparent;
-    border-bottom: solid;
-    width: 30;
+        order:1;
+    }
+
+    .menu div:nth-child(2)
+    {
+        order:3;
+        flex-basis: 50%;
+        border-bottom: 2px solid #f2f2f2;
+        text-align: center;
+        
+    }
+
+    .menu div:nth-child(3)
+    {
+        order:4;
+        flex-basis: 50%;
+        border-bottom: 2px solid #f2f2f2;
+        text-align: center;
+    }
+
+    .menu div:nth-child(4)
+    {
+        order:2;
+        text-align: end;
+        flex-basis: 25%;
+        margin-right: 18px;
+    }
+
+    .nav :hover
+    {
+        border-top: none;
+    }
+
+    .menu div:nth-child(2):hover
+    {
+        border-bottom: 2px solid #0065fc;
+    }
+
+    .menu div:nth-child(3):hover
+    {
+        border-bottom: 2px solid #0065fc;
     }
 }
 /*---TOPSECTION---*/
-@media screen and (max-width:768px)
+@media all and (max-width:667px)
 {
     #topsection
     {
         margin-left:10px;
     }
+    
 }
 /*--formulaire--*/
 #formulaire
@@ -167,6 +194,18 @@ margin: 10px;
 {
     border-radius: 0px 10px 10px 0px;
     padding:10px;
+    color: white;
+    background-color: #0065fc;
+    margin-left: -6px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.loupe
+{
+    display:none;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
     color: white;
     background-color: #0065fc;
     margin-left: -6px;
@@ -190,7 +229,7 @@ input#Recherche
     font-weight: 600;
     color: black;
 }
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     #formulaire
     {
@@ -203,6 +242,14 @@ input#Recherche
     .fas.fa-map-marker-alt
     {
         margin-left: 10px;
+    }
+    .bouton
+    {
+        display:none;
+    }
+    .loupe
+    {
+        display: inline;
     }
 }
 /*--filtres--*/
@@ -324,7 +371,7 @@ margin-top: 30px;
 {
     color: #0065fc;
 }
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {   
     #filtres
     {
@@ -348,7 +395,7 @@ margin-top: 30px;
         margin-bottom: 10px;
     }
 }
-@media screen and (min-width:768px and max-width:1024px)
+@media all and (min-width:768px and max-width:1024px)
 {
     #filtres
     {
@@ -578,7 +625,7 @@ margin-top: 30px;
     padding-left: 70px; 
 }
 
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
    {
        #Populaires
        {
@@ -606,7 +653,7 @@ margin-top: 30px;
        }
        
    }
-   @media screen and (min-width:769px and max-width:1024px)
+   @media all and (min-width:768px and max-width:1024px)
 {
     #Populaires
     {
@@ -724,7 +771,7 @@ margin-top: 30px;
     width: 300px;
 }
 
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     #activites
     {
@@ -798,7 +845,7 @@ margin-top: 30px;
    }
 }
 
-@media screen and (min-width:769px and max-width:1024px)
+@media all and (min-width:768px and max-width:1024px)
 {
     .mer
     {
@@ -869,7 +916,7 @@ footer
     background-color: #F2F2F2;
 }
 
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     
     footer
@@ -879,7 +926,7 @@ footer
         width: 370px;
     }
 }
-@media screen and (min-width:769px and max-width:1024px)
+@media all and (min-width:768px and max-width:1024px)
 {
     footer
     {
@@ -895,7 +942,7 @@ h1
     padding-left: 30px; 
 }
 
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     h1 
     {
