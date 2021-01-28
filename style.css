@@ -37,7 +37,7 @@ h1
 {
     #blocpage
     {
-        margin-right: 10px;
+      
         margin-left: 0px;
     }
 }
@@ -395,7 +395,7 @@ margin-top: 30px;
         margin-bottom: 10px;
     }
 }
-@media all and (min-width:768px and max-width:1024px)
+@media all and (max-width:1294px)
 {
     #filtres
     {
@@ -458,6 +458,8 @@ margin-top: 30px;
     height: 620px;
     width: 880px;
     margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hebergements
@@ -497,6 +499,7 @@ margin-top: 30px;
 {
     display:block;
     border-radius: 10px;
+    box-shadow: 4px 4px 6px #aaa;
     background-color: white; 
     height: 200;
     width: 240;
@@ -508,19 +511,20 @@ margin-top: 30px;
     margin-left: 30px;
 }
 
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     #hotels
     {
         display: flex;
         margin: auto;
         flex-direction: column-reverse;
+        justify-content: center;
     }
     
     #Hebergements
     {
         height: 1500px;
-        width: 380px;
+        width: auto;
         
     }
 
@@ -545,19 +549,55 @@ margin-top: 30px;
         height: 115px;
         width: 320px;
         padding-right: 5px;
+        object-fit: cover;
+        width: 100%;
    }
 
-   .afficher
-   {
-       
-   }
-
-   .leshebergements
-   {
-
-   }
-    
 }
+@media all and (max-width:1294px)
+{
+    #hotels
+    {
+        display: flex;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    
+    #Hebergements
+    {
+        height: 1500px;
+        width: 100%;
+        
+    }
+
+    .hebergements
+    {   display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        justify-content: space-around; 
+    }
+
+   #Hebergements .carte
+   {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+   }
+
+   .hebergements .carte .image 
+   {
+        height: 115px;
+        width: 320px;
+        padding-right: 5px;
+        object-fit: cover;
+        width: 100%;
+   }
+
+}
+
+
 /*--POPULAIRE--*/
 #Populaires
 {
@@ -566,11 +606,14 @@ margin-top: 30px;
     height: 620px;
     width: 420px;
     margin-top:30px;
-    margin-right:30px;   
+    margin-right:30px;
+    margin-left: auto;
+    margin-right: auto;   
 }
 #Populaires .lieu
 {
     border-radius: 10px;
+    box-shadow: 4px 4px 6px #aaa;
     background-color: white;
     display: flex;
     margin-bottom: 30px;
@@ -625,7 +668,7 @@ margin-top: 30px;
     padding-left: 70px; 
 }
 
-@media all and (max-width:667px)
+@media all and (max-width:768px)
    {
        #Populaires
        {
@@ -635,7 +678,13 @@ margin-top: 30px;
         padding-right: 10px;
         margin-top: 0;
         margin-right: 0;
-       }
+   
+        }
+
+        #Populaires .lieu
+        {
+            width: auto;
+        }
 
        .tpf
        {
@@ -653,19 +702,19 @@ margin-top: 30px;
        }
        
    }
-   @media all and (min-width:667px and max-width:1024px)
+   @media all and (max-width:1294px)
 {
     #Populaires
     {
      flex-wrap: wrap-reverse;
      height: 600px;
-     width: auto; 
+     width: 100%; 
      }
 
      #Populaires .lieu
        {   
         height: 145px;
-        width: auto;
+        width: 100%;
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 30px;
@@ -693,7 +742,7 @@ margin-top: 30px;
   justify-content: space-around;
 }
 
-/*--blocs des activites--*/
+
 .mer
 {
     box-shadow: 0px 6px 6px #F2F2F2;
@@ -777,136 +826,79 @@ margin-top: 30px;
     {
         height: 1300px;
         padding-top: 5px;
+        width: 100%;
+        margin-bottom: auto;
+        justify-content: center;
+        
     }
     .visite
     {
        flex-direction: column;
-       padding-left: 20;
+       
+       width: 100%;
+       margin: 0px;
     }
 
-   .mer
+   .mer, .fort, .frioul, .mer, .ndlg, .parc
    {
     height: 190px;
     width: 330px;
+    margin: 10px;
+    box-sizing: border-box;
+    justify-content: center;
    }
 
-   .fort
-   {
-    height: 190px;
-    width: 330px;
-   }
 
-   .frioul
-   {
-    height: 190px;
-    width: 330px; 
-   }
-
-   .ndlg
-   {
-    height: 190px;
-    width: 330px;
-   }
-
-   .parc
-   {
-    height: 190px;
-    width: 330px;
-   }
-
-   .picturebig
+   .picturebig, .picture, .picturesmall, .ciel, .vue
    {
     height: 130px;
     width: 330px;
    }
 
-   .picture
-   {
-    height: 130px;
-    width: 330px;
-   }
-
-   .picturesmall
-   {
-    height: 130px;
-    width: 330px;
-   }
-
-   .ciel
-   {
-    height: 130px;
-    width: 330px;
-   }
-
-   .vue
-   {
-    height: 130px;
-    width: 330px;
-   }
+   
 }
 
-@media all and (min-width:768px and max-width:1024px)
+@media all and (max-width:1294px)
 {
-    .mer
+    #activites
     {
-     height: 140px;
-     width: 230px;
+       
+        height: 1300px;
+        padding-top: 5px;
+        width: 100%;
+        margin-bottom: auto;
+        justify-content: center;
+        
     }
+    .visite
+    {
+        flex-direction: column;
+        
+        width: 100%;
+        margin: 0px;
+       
+    }
+   
 
-    .fort
+    .mer, .fort, .frioul, .mer, .ndlg, .parc
     {
-     height: 140px;
-     width: 230px;
+     height: 190px;
+     width: 100%;
+     margin: 10px;
+     box-sizing: border-box;
+   
     }
+ 
+ 
+    .picturebig, .picture, .picturesmall, .ciel, .vue
+    {
+     height: 130px;
+     width: 100%;
+    }
+ 
 
-    .frioul
-    {
-     height: 140px;
-     width: 230px; 
-    }
-
-    .ndlg
-    {
-     height: 140px;
-     width: 230px;
-    }
-
-    .parc
-    {
-     height: 140px;
-     width: 230px;
-    }
-
-    .picturebig
-    {
-     height: 85px;
-     width: 225px;
-    }
-
-    .picture
-    {
-     height: 85px;
-     width: 225px;
-    }
-
-    .picturesmall
-    {
-     height: 85px;
-     width: 225px;
-    }
-
-    .ciel
-    {
-     height: 85px;
-     width: 225px;
-    }
-
-    .vue
-    {
-     height: 85px;
-     width: 225px;
-    }
 }
+
 
 /*--FOOTER--*/
 footer 
@@ -923,18 +915,22 @@ footer
     {
         flex-direction: column;
         padding-left:20px;
-        width: 370px;
+        width: 100%;
+        margin-top: 20px;
     }
 }
-@media all and (min-width:768px and max-width:1024px)
+@media all and (max-width:1294px)
 {
     footer
     {
-        flex-direction: row;
+        flex-direction: column;
         padding-left:20px;
-        width: auto;
+        width: 100%;
+        margin-top: 20px;
     }
 }
+
+
 
 /*--H1---*/
 h1
@@ -949,3 +945,9 @@ h1
         padding-left: 30px;
     }
 }
+
+
+
+* {
+            box-sizing: border-box;
+  }
