@@ -42,7 +42,7 @@ h1
     }
 }
 
-/* header*/
+/* HEADER*/
 
 .menu  
 {
@@ -184,7 +184,7 @@ h1
     }
     
 }
-/*--formulaire--*/
+/*--FORMULAIRE--*/
 #formulaire
 {
     margin-top: 2px 1px 2px 1px;
@@ -252,7 +252,7 @@ input#Recherche
         display: inline;
     }
 }
-/*--filtres--*/
+/*--FILTRES--*/
 #filtres
 {
 display: flex;
@@ -418,8 +418,8 @@ margin-top: 30px;
         margin-bottom: 10px;
     }
 }
-/*---icones--*/
-.fas.fa-star /*--etoiles--*/
+
+.fas.fa-star 
 {
     color: #0065fc;
     padding-left: 10px;
@@ -430,7 +430,7 @@ margin-top: 30px;
     color:grey;
 }
 
-.fas.fa-info /*--info--*/
+.fas.fa-info 
 {
     border: solid #f2f2f2;
     border-radius: 50px;
@@ -440,7 +440,7 @@ margin-top: 30px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
-/*--HEBERGEMENTS--*/
+/*--SECTION HEBERGEMENTS--*/
 #hotels
 {
     display: flex;
@@ -596,9 +596,51 @@ margin-top: 30px;
    }
 
 }
+@media all and (max-width:1600px)
+{
+    #hotels
+    {
+        display: flex;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    
+    #Hebergements
+    {
+        height: 1500px;
+        width: 100%;
+        
+    }
+
+    .hebergements
+    {   display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        justify-content: space-around; 
+    }
+
+   #Hebergements .carte
+   {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+   }
+
+   .hebergements .carte .image 
+   {
+        height: 115px;
+        width: 320px;
+        padding-right: 5px;
+        object-fit: cover;
+        width: 100%;
+   }
+
+}
 
 
-/*--POPULAIRE--*/
+/*--SECTION POPULAIRES--*/
 #Populaires
 {
     border-radius: 10px;
@@ -662,7 +704,7 @@ margin-top: 30px;
     font-weight:600;
 }
 
-.fas.fa-chart-line /*--icone--*/
+.fas.fa-chart-line 
 { 
     color: black;
     padding-left: 70px; 
@@ -720,8 +762,26 @@ margin-top: 30px;
         margin-bottom: 30px;
        }
 }
+@media all and (max-width:1600px)
+{
+    #Populaires
+    {
+     flex-wrap: wrap-reverse;
+     height: 600px;
+     width: 100%; 
+     }
 
-/*--ACTIVITES--*/
+     #Populaires .lieu
+       {   
+        height: 145px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 30px;
+       }
+}
+
+/*--SECTION ACTIVITES--*/
 #activites
 {
     margin-top: 50px;
@@ -898,6 +958,47 @@ margin-top: 30px;
  
 
 }
+@media all and (max-width:1600px)
+{
+    #activites
+    {
+       
+        height: 1300px;
+        padding-top: 5px;
+        width: 100%;
+        margin-bottom: auto;
+        justify-content: center;
+        
+    }
+    .visite
+    {
+        flex-direction: column;
+        
+        width: 100%;
+        margin: 0px;
+       
+    }
+   
+
+    .mer, .fort, .frioul, .mer, .ndlg, .parc
+    {
+     height: 190px;
+     width: 100%;
+     margin: 10px;
+     box-sizing: border-box;
+   
+    }
+ 
+ 
+    .picturebig, .picture, .picturesmall, .ciel, .vue
+    {
+     height: 130px;
+     width: 100%;
+    }
+ 
+
+}
+
 
 
 /*--FOOTER--*/
